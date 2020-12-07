@@ -133,7 +133,7 @@ Examples:
 - Add methods to DSP-PY-LIB
 - Add unit tests to DSP-APP and DSP-UI-LIB
 - Add feature documentation to DSP-DOCS
-- Cl-ean up xy
+- Clean-up xy
 - Add tests
 - Bump version of library xyz
 
@@ -141,7 +141,7 @@ Examples:
 
 [Bug Template for YouTrack issues](https://dasch.myjetbrains.com/youtrack/newIssue?project=DSP&summary=Bug&description=**Describe%20the%20bug**%0AA%20clear%20and%20concise%20description%20of%20what%20the%20bug%20is.%0A%0A**To%20Reproduce**%0ASteps%20to%20reproduce%20the%20behavior%3A%0A1.%20Go%20to%20'...'%0A2.%20Click%20on%20'....'%0A3.%20Scroll%20down%20to%20'....'%0A4.%20See%20error%0A%0A**Expected%20behavior**%0AA%20clear%20and%20concise%20description%20of%20what%20you%20expected%20to%20happen.%0A%0A**Screenshots**%0AIf%20applicable%2C%20add%20screenshots%20to%20help%20explain%20your%20problem.%0A%0A**Desktop%20(please%20complete%20the%20following%20information)%3A**%0A%20-%20OS%3A%20%5Be.g.%20iOS%5D%0A%20-%20Browser%20%5Be.g.%20chrome%2C%20safari%5D%0A%20-%20Version%20%5Be.g.%2022%5D%0A%0A**Smartphone%20(please%20complete%20the%20following%20information)%3A**%0A%20-%20Device%3A%20%5Be.g.%20iPhone6%5D%0A%20-%20OS%3A%20%5Be.g.%20iOS8.1%5D%0A%20-%20Browser%20%5Be.g.%20stock%20browser%2C%20safari%5D%0A%20-%20Version%20%5Be.g.%2022%5D%0A%0A**Additional%20context**%0AAdd%20any%20other%20context%20about%20the%20problem%20here.&c=Type%20Bug)
 
-Describes an user facing defekt.
+Describes a user facing defect.
 
 Bugs are prioritized (e.g., high, normal, low) issues which describe a defect in the DaSCH Service Platform. These defects can affect either the current released version or the next major version in development.
 
