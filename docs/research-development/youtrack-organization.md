@@ -11,7 +11,8 @@ For the project, the following issue types are defined.
 Describes an overal theme that the issues organized under it share.
 
 ### Epic
-Describes a larger User Story, which typically can be broken down in smaller ones.
+Describes a larger User Story, which typically can be broken down in smaller ones
+(User Stories).
 
 ### User Story
 It's tempting to think that user stories are, simply put, software system requirements. But they're not.
@@ -116,9 +117,52 @@ should be added as a task:
 ### Tasks
 Describe any kind of work that needs to be done to implement a User Story or fix a Bug.
 
+The user stories are moved from the product backlog during sprint planning to the sprint backlog. At the same time, the user story is broken down into Tasks which become part of the sprint backlog.
+
+Typically there is at least one task per involved subsystem and/or developer. 
+
+A task, in contrast to a User Story, is typically something like code this, design that, create test data for such-and-such, automate that, and so on. These tend to be things done by one person.
+
+In general, tasks should have a time estimate and the effective time spent attached to it.
+
+Examples:
+- Add route to `DSP-API`
+- Add project members component to DSP-APP
+- Add members list component to DSP-UI-LIB
+- Add route to DSP-JS-LIB
+- Add methods to DSP-PY-LIB
+- Add unit tests to DSP-APP and DSP-UI-LIB
+- Add feature documentation to DSP-DOCS
+- Cl-ean up xy
+- Add tests
+- Bump version of library xyz
 
 ### Bug
+
+[Bug Template for YouTrack issues](https://dasch.myjetbrains.com/youtrack/newIssue?project=DSP&summary=Bug&description=**Describe%20the%20bug**%0AA%20clear%20and%20concise%20description%20of%20what%20the%20bug%20is.%0A%0A**To%20Reproduce**%0ASteps%20to%20reproduce%20the%20behavior%3A%0A1.%20Go%20to%20'...'%0A2.%20Click%20on%20'....'%0A3.%20Scroll%20down%20to%20'....'%0A4.%20See%20error%0A%0A**Expected%20behavior**%0AA%20clear%20and%20concise%20description%20of%20what%20you%20expected%20to%20happen.%0A%0A**Screenshots**%0AIf%20applicable%2C%20add%20screenshots%20to%20help%20explain%20your%20problem.%0A%0A**Desktop%20(please%20complete%20the%20following%20information)%3A**%0A%20-%20OS%3A%20%5Be.g.%20iOS%5D%0A%20-%20Browser%20%5Be.g.%20chrome%2C%20safari%5D%0A%20-%20Version%20%5Be.g.%2022%5D%0A%0A**Smartphone%20(please%20complete%20the%20following%20information)%3A**%0A%20-%20Device%3A%20%5Be.g.%20iPhone6%5D%0A%20-%20OS%3A%20%5Be.g.%20iOS8.1%5D%0A%20-%20Browser%20%5Be.g.%20stock%20browser%2C%20safari%5D%0A%20-%20Version%20%5Be.g.%2022%5D%0A%0A**Additional%20context**%0AAdd%20any%20other%20context%20about%20the%20problem%20here.&c=Type%20Bug)
+
 Describes an user facing defekt.
+
+Bugs are prioritized (e.g., high, normal, low) issues which describe a defect in the DaSCH Service Platform. These defects can affect either the current released version or the next major version in development.
+
+If a bug affects the current released (deployed) version of the platform, then it is immediately put on the board of the running sprint. Bugs with high priority should be solved during the running sprint, while normal and low priority bugs can be moved to the next sprint if necessary. Any bugs moved to the next sprint should be re-prioritized to “high” if they are not already, thus making sure that they are not pushed back again.
+
+With two weeks per sprint, a high priority bug should thus be solved in those two weeks. A normal or low priority bug moved to the next sprint will thus be solved at the latest in 4 weeks. A bugfix release can then be planned, which will incorporate only the bug fixes.
+
+If a bug affects the current development version, i.e., the next major version in development, then it should be put on the board by the team during regular Sprint Planning and solved before the next major version of the platform is released.
+
+## Subsystems
+The DaSCH Service Platform (DSP) consists of multiple subsystems. The subsystems usually live in their own Github repository. These are:
+
+- `DSP-API`: https://github.com/dasch-swiss/dsp-api
+- `DSP-APP`: https://github.com/dasch-swiss/dsp-app
+- `DSP-UI-LIB`: https://github.com/dasch-swiss/dsp-ui-lib 
+- `DSP-JS-LIB`: https://github.com/dasch-swiss/dsp-js-lib
+- `DSP-TOOLS`: https://github.com/dasch-swiss/dsp-tools
+- `DSP-DOCS`: https://github.com/dasch-swiss/dsp-docs
+
+The DaSCH Service Platform has a global release schedule, for which then the individual subsystems need to be released. A user story consisting of tasks with hard dependencies (aka “breaking changes”) can only be released as a whole. Tasks with soft dependencies (aka “non-breaking changes) can be released independently.
+
 
 ## Example
 
@@ -132,12 +176,7 @@ Describes an user facing defekt.
     - User Story: Hierarchical lists (DSP-713)
 
 
-Main differences:
 
-1. The organization between subsystems is now done at the level of a User Story and the dependencies are
- reflected in the Tasks with defined dependencies. Everything that could be done before at the level of the Epic,
- as far as inter-subsystem organization is concerned, can be done without any changes, on the level of the User Story.
+
+1. The organization between subsystems is done at the level of a User Story and the dependencies are reflected in the Tasks with defined dependencies.
 1. User Stories should be tagged with a future release, reflecting the global priorization.
-1. While before, an Epic needed to be created each time for a feature that would need to be prioritized, now there
- is the possibility to use Epic and User Stories do divide the functionalities.
-1. The Product Owner is now responsible to priritize not only Epics but also User Stories.
