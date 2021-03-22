@@ -15,7 +15,7 @@ Describe categories in which issues are classified by relevant topic.
 ### Epic
 
 Describe a feature or a part of a feature that will be implemented over one or several iterations of work. An epic must deliver a workable piece of code (from backend to frontend).
-An epic are broken down and detailed by 2 types of issues: user stories and tasks. They are both complementary, at the same level in the issue hierarchy.
+It is broken down and detailed by 2 types of issues: user stories and tasks. They are both complementary, at the same level in the issue hierarchy.
 
 ### User Story
 
@@ -25,16 +25,17 @@ User stories are written by the product management team.
 
 ### Task
 
-Describe a feature in a technical language. A task can be a new feature, an improvement or a bug fix.
+Describe a part of a feature in a technical language. A task can be a new feature, an improvement or a bug fix.
+
 Tasks are written by developers based on the user story requirements.
 
 ## Workflow
 
 The Product Management (PM) team creates themes and epics based on the current roadmap and priorities. For each epic, one or several user stories are written following the defined template and added to the Youtrack board.
 
-The relevant developers by an epic participate in a meeting with one of the PM members who explains the epic and the user stories.
+For each epic, the relevant developers participate in a meeting with one of the PM members who explains the epic and the user stories.
 
-The developers then create one or several tasks with technical specifications based on the user story requirements. The task should be created for each subsystem involved. The task workflow and the estimation of time are defined.
+The developers then create one or several tasks with technical specifications based on the user story requirements. A task should be created for each subsystem involved. The workflow and the estimation of time are also defined.
 
 ## Templates
 
@@ -44,13 +45,11 @@ Describe an iteration to achieve a working feature or a working part of it.
 
 It is written by the Product Management team, in an informal language, following this template:
 
-Who: “As a [persona*],
+Who: “As a [persona*], --> [Persona definition](https://docs.google.com/document/d/1fTPaEq9Ks6tn5R1T1ZMEvynb7GpNPNX5buvVtklk0eo/edit)
 
 What: I want to [do something],
 
 Why: so that I can [solve a problem]”
-
-> *[Persona definition](https://docs.google.com/document/d/1fTPaEq9Ks6tn5R1T1ZMEvynb7GpNPNX5buvVtklk0eo/edit)
 
 Definition of done OR Expected behaviour
 
@@ -68,11 +67,11 @@ Once the user stories are clearly defined, they are visible for the entire team 
 
 Describe any kind of work that needs to be done to implement a User Story or fix a Bug.
 
-The user story is technically broken down into Tasks which become part of the sprint backlog.
+The user story is broken down in a technical way into tasks which become part of the sprint backlog.
 
 Typically there is at least one task per involved subsystem and/or group of developers.
 
-A task, in contrast to a User Story, is typically something like code this, design that, create test data for such-and-such, automate that, and so on.
+A task, in contrast to a user story, is typically something like code this, design that, create test data for such-and-such, automate that, and so on.
 
 In general, tasks should have a time estimate and the effective time spent attached to it.
 
@@ -121,7 +120,7 @@ The DaSCH Service Platform has a global release schedule, for which then the ind
 - Theme: Permissions
   - Epic: Get and display permissions for a project (DSP-123)
     - User Story: Display existing group permissions (incl. mockups)
-    - Task: Refactor  (Backend)
+    - Task: Refactor hasPermissions object structure (Backend)
     - Task: Get permissions from the API (Frontend)
     - Task: Table view with groups and given permissions (Frontend)
 
